@@ -5,6 +5,12 @@ build:
 startCommand:
   type: "http"
   configSchema:
-    type: "object"
-    properties: {}
-  exampleConfig: {} 
+    type: object
+    required:
+      - CRYPTOSLAM_API_KEY
+    properties:
+      CRYPTOSLAM_API_KEY:
+        type: string
+        description: "CRYPTOSLAM_API_KEY - Your API key"
+  exampleConfig:
+    CRYPTOSLAM_API_KEY: test-key-123
